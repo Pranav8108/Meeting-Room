@@ -1,0 +1,24 @@
+﻿@model IDENTITY.Models.RoomModel
+<form asp-action="CreateRoom" method="post">
+	<h3>Create Room</h3>
+
+	<div class="form-group">
+		<label asp-for="RoomName">Room Name</label>
+		<input type="text" class="form-control" asp-for="RoomName" />
+	</div>
+	<div class="form-group">
+		<label asp-for="Capacity"></label>
+		<input asp-for="Capacity" class="form-control" />
+		@*<span asp-validation-for="Capacity" class="text-danger"></span>*@
+	</div>
+	<div class="form-group">
+		<label asp-for="Status">Availability</label>
+		<select asp-for="Status" class="form-control">
+			<option value="Available">Available</option>
+			<option value="NotAvailable">Not Available</option>
+		</select>
+	</div>
+	<button type="submit" class="btn btn-primary">Create</button>
+	<a asp-action="GetRoom" class="btn btn-primary">Back to list</a>
+
+</form>

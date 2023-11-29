@@ -1,0 +1,41 @@
+﻿@model IEnumerable<IDENTITY.Models.RoomModel>
+<h2>Room List</h2>
+
+
+<p>
+    <a asp-action="CreateRoom" class="btn btn-primary">Create New Room</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Capacity</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>@room.Id</td>
+                <td>@room.RoomName</td>
+                <td>@room.Capacity</td>
+                <td>@room.Status</td>
+                <td>
+                    <a asp-action="GetRoomDetails" asp-route-id="@room.Id">Details</a> |
+                    <a asp-action="EditRoom" asp-route-id="@room.Id">Edit</a> |
+                    <a asp-action="DeleteRoom" asp-route-id="@room.Id">Delete</a> |
+                    <a asp-action="BookRoom" asp-route-id="@room.Id">Book</a> |
+                    <a asp-action="BookingDetails" asp-route-id="@room.Id">Booking Details</a> |
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-action="GetBookingDetails" class="btn btn-primary">Get all Booking Details</a>
+</p>

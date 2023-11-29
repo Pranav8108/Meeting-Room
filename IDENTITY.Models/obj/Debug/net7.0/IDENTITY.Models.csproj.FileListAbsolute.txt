@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\bin\Debug\net7.0\IDENTITY.Models.deps.json
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\bin\Debug\net7.0\IDENTITY.Models.dll
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\bin\Debug\net7.0\IDENTITY.Models.pdb
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\obj\Debug\net7.0\IDENTITY.Models.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\obj\Debug\net7.0\IDENTITY.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\obj\Debug\net7.0\IDENTITY.Models.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\obj\Debug\net7.0\IDENTITY.Models.AssemblyInfo.cs
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\obj\Debug\net7.0\IDENTITY.Models.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\obj\Debug\net7.0\IDENTITY.Models.dll
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\obj\Debug\net7.0\refint\IDENTITY.Models.dll
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\obj\Debug\net7.0\IDENTITY.Models.pdb
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.Models\obj\Debug\net7.0\ref\IDENTITY.Models.dll

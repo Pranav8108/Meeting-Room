@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\bin\Debug\net7.0\IDENTITY.DataAccess.deps.json
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\bin\Debug\net7.0\IDENTITY.DataAccess.dll
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\bin\Debug\net7.0\IDENTITY.DataAccess.pdb
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\bin\Debug\net7.0\IDENTITY.Models.dll
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\bin\Debug\net7.0\IDENTITY.Models.pdb
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\IDENTITY.DataAccess.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\IDENTITY.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\IDENTITY.DataAccess.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\IDENTITY.DataAccess.AssemblyInfo.cs
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\IDENTITY.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\IDENTITY.DataAccess.csproj.CopyComplete
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\IDENTITY.DataAccess.dll
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\refint\IDENTITY.DataAccess.dll
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\IDENTITY.DataAccess.pdb
+C:\Users\user\Desktop\.net\IDENTITY\IDENTITY.DataAccess\obj\Debug\net7.0\ref\IDENTITY.DataAccess.dll

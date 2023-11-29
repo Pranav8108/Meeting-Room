@@ -1,0 +1,25 @@
+﻿@model List<IDENTITY.Models.ParticipantModel>;
+
+@{
+    ViewData["Title"] = "List Participant";
+}
+
+<h1>List of Participants for Booking ID: @ViewBag.BookingId</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Participant ID</th>
+            <th>User ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var participant in Model)
+        {
+            <tr>
+                <td>@participant.Id</td>
+                <td>@participant.UserId</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p><a asp-action="GetBookingDetails" class="btn btn-primary">Back to Booked Room List</a></p>

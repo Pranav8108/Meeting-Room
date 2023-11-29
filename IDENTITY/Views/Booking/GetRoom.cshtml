@@ -1,0 +1,53 @@
+﻿@model IEnumerable<IDENTITY.Models.RoomModel> // Replace with your actual model namespace
+
+<h2>Room List</h2>
+
+
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Capacity</th>
+			<th>Status</th>
+			
+			<th>Actions</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var room in Model)
+		{
+			<tr>
+				<td>@room.Id</td>
+				<td>@room.RoomName</td>
+				<td>@room.Capacity</td>
+				<td>@room.Status</td>
+				
+				<td>
+					<a asp-action="GetRoomDetails" asp-route-id="@room.Id">Room Details</a> |
+				</td>
+				<td>
+					<a asp-action="BookRoom" asp-route-id="@room.Id">Book</a> |
+				</td>
+				<td>
+					<a asp-action="BookingDetails" asp-route-id="@room.Id">Booking Details</a> |
+				</td>
+				@*<td>
+					<a asp-action="MyBooking" asp-route-id="@room.Id"> My Booking </a> |
+				</td>
+*@
+			</tr>
+		}
+	</tbody>
+</table>
+
+	<p>
+		<a asp-action="MyBooking" class="btn btn-info" asp-route-id="Model.Id"> My Booking </a>
+	</p>
+   <p>
+	<a asp-action="Display" class=" btn btn-primary">Back to Display</a> |
+   </p>
+
+

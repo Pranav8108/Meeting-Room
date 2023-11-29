@@ -1,0 +1,24 @@
+﻿@model IDENTITY.Models.BookingModel // Replace with your actual model namespace
+
+
+
+<h2>Delete Booking</h2>
+
+<div>
+	<h4>Are you sure you want to delete this booking?</h4>
+	<h4>Booking ID: @Model.ID</h4>
+	<h4>Start Time: @Model.StartTime</h4>
+	<h4>End Time: @Model.EndTime</h4>
+
+	<h4>User: @Model.UserID</h4>
+
+	<h4>Room ID: @Model.RoomModelId</h4>
+</div>
+
+<form asp-action="DeleteBooking" method="post">
+	<input type="hidden" asp-for="ID" />
+	<div class="form-group">
+		<input type="submit" value="Delete" class="btn btn-danger" />
+		<a asp-action="GetBookingDetails" class="btn btn-primary">Cancel</a>
+	</div>
+</form>

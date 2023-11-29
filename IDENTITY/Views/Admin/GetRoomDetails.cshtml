@@ -1,0 +1,13 @@
+﻿@model IDENTITY.Models.RoomModel
+
+
+<h2>Room Details</h2>
+
+<div>
+    <h4>Name: @Model.RoomName</h4>
+    <h4>Capacity: @Model.Capacity</h4>
+</div>
+
+<p>
+    <a asp-action="GetRoom" class="btn btn-primary">Back to List</a>
+</p>

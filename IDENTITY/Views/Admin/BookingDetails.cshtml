@@ -1,0 +1,40 @@
+﻿@model List<IDENTITY.Models.BookingModel>
+
+<h2>Booking Details</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User Id</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Room Id</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var booking in Model)
+            {
+                <tr>
+                    <td>@booking.ID</td>
+                    <td>@booking.UserID</td>
+                    <td>@booking.StartTime</td>
+                    <td>@booking.EndTime</td>
+                    <td>@booking.RoomModelId</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No bookings found for this room.</p>
+}
+<p>
+    <a asp-action="GetRoom" class="btn btn-primary">Back to Room List</a>
+</p>
+

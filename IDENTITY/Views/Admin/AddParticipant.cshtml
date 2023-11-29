@@ -1,0 +1,46 @@
+﻿@model IDENTITY.Models.AddParticipantViewModel
+
+<h2>Add Participant to Booked Room</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddParticipant" method="post">
+            <input type="hidden" asp-for="Booking.ID" />
+
+            <div class="form-group">
+                <label asp-for="Booking.RoomModel.RoomName" class="control-label">Room Name:</label>
+                <input asp-for="Booking.RoomModel.RoomName" class="form-control" disabled />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Booking.StartTime" class="control-label">Start Time:</label>
+                <input asp-for="Booking.StartTime" class="form-control" disabled />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Booking.EndTime" class="control-label">End Time:</label>
+                <input asp-for="Booking.EndTime" class="form-control" disabled />
+            </div>
+
+            <div class="form-group">
+                <label for="UserId">Select Participant:</label>
+                <select class="form-control" asp-for="UserId">
+                    <option value="">Select Participant</option>
+                    @foreach (var participant in Model.AvailableParticipants)
+                    {
+                        <option value="@participant.Name">
+                            @(participant != null ? $"{participant.Name} ({participant.UserName})" : "Unknown Participant")
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Add Participant" class="btn btn-primary" />
+            </div>
+        </form>
+        <p> <a asp-controller="Admin" class="btn btn-primary" asp-action="GetBookingDetails" asp-route-id="@Model.Booking.ID">Back to Booking Details</a> </p>
+
+    </div>
+</div>
+

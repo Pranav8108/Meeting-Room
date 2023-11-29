@@ -1,0 +1,32 @@
+﻿@model IEnumerable<IDENTITY.Models.ParticipantModel>
+
+<h2>Participants List With Booking Id</h2>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>User Name</th>
+            <th>Booking Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var participant in Model)
+        {
+            <tr>
+                <td>@participant.Id</td>
+                <td>@participant.UserId</td>
+                <td>@participant.BookingId</td>
+                <td>
+                    <a asp-action="RemoveParticipant" asp-route-id="@participant.Id">Remove Participant</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-action="GetBookingDetails" class="btn btn-primary">Back to Booking Details</a>
+</p>

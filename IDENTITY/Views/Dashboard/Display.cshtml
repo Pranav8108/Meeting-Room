@@ -1,0 +1,15 @@
+﻿@{
+	string username = User.Identity.Name;
+
+}
+Welcome @username
+@if (User.IsInRole("user"))
+{
+	<div class="list-group">
+		<ul>
+			<li><a href="@Url.Action("GetRoom", "Dashboard")">Room List</a></li>
+
+
+
+	</div>
+}

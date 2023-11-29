@@ -1,0 +1,32 @@
+﻿@model IDENTITY.Models.BookingModel
+
+
+<h3>Book Room</h3>
+<form asp-controller="Booking" asp-action="BookRoom" method="post">
+    <div class="form-group">
+        <label for="roomId">Select Room:</label>
+        <select class="form-control" id="roomId" name="RoomModelId" required>
+            @if (ViewBag.Rooms != null)
+            {
+                foreach (var room in ViewBag.Rooms)
+                {
+                    <option value="@room.Id">@room.RoomName</option>
+                }
+            }
+            else
+            {
+                <option value="">Rooms not available</option>
+            }
+        </select>
+        <div class="form-group">
+            <label for="startTime">Start Time:</label>
+            <input type="datetime-local" class="form-control" id="startTime" name="startTime" required />
+        </div>
+        <div class="form-group">
+            <label for="endTime">End Time:</label>
+            <input type="datetime-local" class="form-control" id="endTime" name="endTime" required/>
+        </div>
+
+    <button type="submit" class="btn btn-primary">Book</button>
+    <a asp-action="GetRoom" class="btn btn-primary">Back to List</a>
+</form>
